@@ -1,0 +1,7 @@
+</main><footer class="site-footer"><div class="wrap"><div class="fgrid">
+<div class="fbrand"><img src="/images/logo.jpeg" alt="SM IMRAN PACKAGES logo" width="120" height="108" loading="lazy"><p class="ftag">Strong Carton, Trusted Quality</p><p>Carton and packaging solutions, developed around your requirements.</p></div>
+<div><h4>Explore</h4><a href="/about">About Us</a><a href="/products">Products &amp; Packaging</a><a href="/custom-packaging">Custom Packaging</a><a href="/process">Our Process</a><a href="/gallery">Gallery</a><a href="/quote">Request a Quote</a></div>
+<div><h4>Packaging</h4><% content.products.slice(0,5).forEach(p=>{ %><a href="/quote?product=<%= p.slug %>"><%= p.name %></a><% }) %><a href="/quote?product=Other / Custom Packaging">Custom packaging enquiry</a></div>
+<div><h4>Contact</h4><p><%= company.phone %></p><p><%= company.email %></p><p><%= company.address %></p><a href="<%= company.whatsappLink %>">WhatsApp</a></div></div>
+<div class="legal"><span>&copy; <%= new Date().getFullYear() %> SM IMRAN PACKAGES. All rights reserved.</span><span><a href="/privacy">Privacy Policy</a><a href="/terms">Terms and Conditions</a></span></div></div></footer>
+<script src="/js/main.js" defer></script></body></html>

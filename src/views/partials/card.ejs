@@ -1,0 +1,2 @@
+<figure class="pi <%= p.cls %>" data-cat="<%= p.cat %>"><a class="pimg" href="/quote?product=<%= p.slug %>" tabindex="-1" aria-hidden="true"><img src="<%= p.img %>" alt="<%= p.name %> - illustrative studio render" width="1200" height="900" loading="<%= i<2?'eager':'lazy' %>"><span class="badge">Illustrative</span></a>
+<figcaption><span class="idx"><%= String(i+1).padStart(2,'0') %></span><h3><%= p.name %></h3><p><%= p.desc %></p><a class="more" href="/quote?product=<%= p.slug %>">Get a Quote for This Product <span aria-hidden="true">&rarr;</span></a></figcaption></figure>

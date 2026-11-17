@@ -1,0 +1,3 @@
+<%- include('partials/head') %><section class="phero"><div class="wrap"><h1>Carton and packaging solutions.</h1><p class="lead">Examples of our work. Every product is developed to your size, design and requirements.</p></div></section>
+<section class="sec tint" id="collection"><div class="wrap"><%- include('partials/products-block') %><div class="filters" role="group" aria-label="Filter products"><button class="on" data-f="all">All</button><% ['Corrugated','Printed','Board','Custom'].forEach(c=>{ %><button data-f="<%= c %>"><%= c %></button><% }) %></div>
+<div class="mosaic"><% content.products.forEach((p,i)=>{ %><%- include('partials/card',{p,i}) %><% }) %></div></div></section><%- include('partials/custom-cta') %><%- include('partials/foot') %>

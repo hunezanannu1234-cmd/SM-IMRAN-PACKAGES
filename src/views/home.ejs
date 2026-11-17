@@ -1,0 +1,31 @@
+<%- include('partials/head') %>
+<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><h1>Packaging that takes your business further.</h1>
+<p class="lead">SM IMRAN PACKAGES works with businesses to discuss and develop carton and packaging solutions according to their requirements.</p>
+<div class="btns"><a class="btn" href="/products#collection">Explore Our Packaging</a><a class="link" href="/custom-packaging">Discuss Your Requirements <span aria-hidden="true">&rarr;</span></a></div></div>
+<figure class="hero-img"><img src="/images/mockups/hero.webp" alt="Studio render of kraft, printed, window and partition cartons" width="1600" height="870" fetchpriority="high"><span class="badge">Illustrative visual, not a company photograph</span></figure></div>
+<div class="wrap strip"><span>Corrugated</span><span>Printed</span><span>Board</span><span>Window</span><span>Partition</span><span>Custom</span></div></section>
+<section class="sec"><div class="wrap intro"><p class="statement">We start with your requirements, then build the packaging around them.</p><div class="introtxt"><p>SM IMRAN PACKAGES focuses on carton and packaging manufacturing. Bring a reference carton, a drawing, a size or a new idea. We discuss it, prepare a quotation and develop a physical sample for you to review.</p><a class="more" href="/about">More about us <span aria-hidden="true">&rarr;</span></a></div></div></section>
+<section class="sec tint" id="collection"><div class="wrap"><%- include('partials/products-block') %><div class="mosaic"><% content.products.forEach((p,i)=>{ %><%- include('partials/card',{p,i}) %><% }) %></div></div></section>
+<%- include('partials/custom-cta') %>
+<section class="sec industry-sec" aria-labelledby="industry-title"><div class="wrap">
+<div class="industry-intro"><div><p class="eyebrow">Across industries</p><h2 id="industry-title">Packaging Solutions for Every Industry</h2><h3 class="industry-subtitle">Whatever Your Product, Let's Create Its Packaging.</h3></div>
+<div class="industry-copy"><p>From cartons to cards and customized packaging, we welcome enquiries from businesses across different industries. Whatever you manufacture, sell or distribute, share your packaging requirements with us and let's discuss a suitable solution.</p></div></div>
+<ul class="industry-list" aria-label="Examples of industries we welcome enquiries from">
+<li>Beauty &amp; Cosmetics</li><li>Skincare &amp; Personal Care</li><li>Food &amp; Beverages</li>
+<li class="industry-highlight"><span class="industry-name">Food Processing &amp; Condiments</span><span class="industry-detail">Ketchup, mayonnaise, chilli sauce, soy sauce, vinegar, and other processed food products.</span></li>
+<li>Confectionery &amp; Chocolates</li><li>Spices &amp; Masala</li><li>Bakery &amp; Sweets</li>
+<li>Pharmaceuticals &amp; Healthcare</li><li>Electronics &amp; Electrical</li>
+<li class="industry-highlight"><span class="industry-name">Textile &amp; Garments</span><span class="industry-detail">Clothing, garment manufacturers, fabric businesses, apparel brands, and textile products.</span></li>
+<li>Shoes &amp; Footwear</li><li>Jewellery &amp; Accessories</li><li>Toys &amp; Games</li>
+<li>Stationery &amp; School Supplies</li><li>Books &amp; Publishing</li><li>Gifts &amp; Promotional Products</li>
+<li>Mobile Accessories</li><li>Household &amp; Kitchen Products</li><li>Automotive &amp; Spare Parts</li>
+<li>Agriculture &amp; Seeds</li><li>Retail &amp; E-commerce</li><li>Industrial &amp; Commercial Products</li>
+</ul>
+<p class="industry-more">And Many More</p>
+<aside class="industry-enquiry"><p>Not seeing your required packaging? We welcome custom enquiries for products beyond our listed range.</p></aside>
+<p class="industry-qualification">These industries are examples of potential customers, not claims of existing clients. SM IMRAN PACKAGES manufactures packaging, not these products. Requirements and manufacturing feasibility are reviewed individually; suitability varies by product.</p>
+</div></section>
+<section class="sec"><div class="wrap split"><div class="sticky"><p class="eyebrow">Why SM IMRAN PACKAGES</p><h2>Built around what your business needs.</h2></div><ol class="rules"><% content.why.forEach((w,i)=>{ %><li class="reveal"><span>0<%= i+1 %></span><div><h3><%= w.title %></h3><p><%= w.text %></p></div></li><% }) %></ol></div></section>
+<section class="sec tint"><div class="wrap split"><div class="sticky"><p class="eyebrow">Our process</p><h2>From your requirement to your carton.</h2><figure class="pimg2"><img src="/images/mockups/sample-review.webp" alt="A kraft carton sample next to a ruler" width="1600" height="1000" loading="lazy"><span class="badge">Illustrative</span></figure></div><div><%- include('partials/steps') %></div></div></section>
+<section class="sec"><div class="wrap"><div class="gp"><a class="gp1" href="/gallery"><img src="/images/mockups/g-printed-wide.webp" alt="Printed cartons - illustrative render" width="1600" height="900" loading="lazy"></a><a class="gp2" href="/gallery"><img src="/images/mockups/g-corrugated-stack.webp" alt="Stacked corrugated cartons - illustrative render" width="900" height="1200" loading="lazy"></a><div class="gp3"><p class="eyebrow">Gallery</p><h2>Packaging at a glance.</h2><a class="more" href="/gallery">View the gallery <span aria-hidden="true">&rarr;</span></a></div></div></div></section>
+<%- include('partials/cta') %><%- include('partials/foot') %>
